@@ -10,6 +10,20 @@ export function App() {
     }
   }
 
+  function handleCodeClick(this: HTMLTextAreaElement) {
+    this.select();
+    this.setSelectionRange(0, 99999);
+
+    document.execCommand('copy');
+
+    const tooltip = document.querySelector('.tooltip');
+    tooltip.classList.add('tooltipactive');
+
+    setTimeout(() => {
+      tooltip.classList.remove('tooltipactive');
+    }, 3000);
+  }
+
   function codePreview(box: HTMLElement) {
     const borderRadius = {
       top_left: box.style.borderTopLeftRadius || 0,
@@ -54,5 +68,8 @@ border-radius: ${borderRadius.top_left} ${borderRadius.top_right} ${borderRadius
 
   inputs.forEach(input => {
     input.addEventListener('change', handleChangeInput);
-  })
+  });
+
+  const code = document.getElementById('code');
+  code.addEventListener('click', handleCodeClick);
 }

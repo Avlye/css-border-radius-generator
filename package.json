@@ -12,5 +12,6 @@
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.10",
     "typescript": "^4.0.2"
-  }
+  },
+  "dependencies": {}
 }
