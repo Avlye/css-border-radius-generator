@@ -1,0 +1,20 @@
+@mixin font-body($font-size, $font-weight) {
+  font-family: 'Poppins', sans-serif;
+  @include font-style($font-size, $font-weight)
+}
+
+@mixin font-fira-code($font-size, $font-weight) {
+  font-family: 'Fira Code', monospace, serif;
+  @include font-style($font-size, $font-weight)
+}
+
+
+@mixin font-style($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  letter-spacing: normal;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Border Radius Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.scss">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- page title -->
+        <h1>Border Radius</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <!-- Inputs -->
+        <div class="inputs-container">
+          <input type="number" id="top_left" placeholder="Top Left">
+          <input type="number" id="top_right" placeholder="Top Right">
+          <input type="number" id="bottom_left" placeholder="Bottom Left">
+          <input type="number" id="bottom_right" placeholder="Bottom Right">
+        </div>
+
+        <!-- box -->
+        <div id="box"></div>
+
+        <!-- Code Preview Clipboard -->
+        <div class="code-preview">
+          <pre><code id="code">/* Silence is Divine */</code></pre>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p class="copy">© Copyright Gabriel (Avlye) Almir 2020. All rights reserved.</p>
+    </footer>
+
+    <script src="ts/main.ts"></script>
+  </body>
+</html>

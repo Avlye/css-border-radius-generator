@@ -1,0 +1,16 @@
+{
+  "name": "css-border-radius-generator",
+  "version": "1.0.0",
+  "description": "CSS Border Radius Generator",
+  "private": true,
+  "author": "Gabriel Almir",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel -p 3000 watch src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10",
+    "typescript": "^4.0.2"
+  }
+}
